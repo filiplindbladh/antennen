@@ -1,0 +1,117 @@
+.Header {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+
+  @media screen and (max-width: 540px) {
+    justify-content: center;
+  }
+}
+
+.Header h1 {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.Header .Description {
+  color: white;
+}
+
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-12px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.Float {
+  animation: floating 2s ease-in-out infinite;
+  height: 100%;
+  max-width: 95vw;
+  object-fit: cover;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 540px) {
+    opacity: 0.5;
+  }
+}
+
+.PageContainer {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-left: 2rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media only screen and (max-width: 440px) {
+    padding-top: 2rem;
+    padding: 0 16px;
+  }
+}
+
+.Description,
+.BlogDescription {
+  max-width: 30em;
+}
+
+.BlogDescription {
+  font-size: 1rem;
+}
+
+.LinkBlog {
+  line-height: 1.25;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid transparent;
+}
+
+.BlogRouterLink:hover .LinkBlog {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.BlogRouterLink {
+  cursor: pointer;
+}
+
+.BlogRouterLink .Heading-large,
+.BlogRouterLink:hover .LinkBlog,
+.BlogRouterLink:hover .BlogDescription {
+  @media only screen and (max-width: 1000px) {
+    border-bottom: none;
+  }
+}
+
+.BlogHeader {
+  background-size: cover;
+  background-position: top right;
+  height: 100%;
+  background-color: black;
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+.AbsoluteHack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 99%;
+  height: 100%;
+  z-index: 100;
+}

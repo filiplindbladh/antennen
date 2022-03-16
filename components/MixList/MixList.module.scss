@@ -1,0 +1,21 @@
+.MixListError {
+  display: flex;
+  align-items: center;
+}
+.MixListError p {
+  margin-left: 16px;
+}
+
+.MasonryGrid {
+  display: flex;
+  width: auto;
+}
+.MixListListItem {
+  padding-right: 32px;
+  background-clip: padding-box;
+  width: 100% !important;
+
+  @media only screen and (max-width: 440px) {
+    padding-right: 0;
+  }
+}
