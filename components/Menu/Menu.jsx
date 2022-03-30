@@ -30,8 +30,10 @@ const Menu = () => {
           <Link href="/archive">Archive</Link>
         </li>
       </ul>
-      <Link href="/" aria-label="Go to Start Page">
-        <img className={styles.Logo} src="/img/logo.png" alt="logo" />
+      <Link href="/" aria-label="Go to Start Page" passHref>
+        <a>
+          <img className={styles.Logo} src="/img/logo.png" alt="logo" />
+        </a>
       </Link>
       <div className={styles.MenuSocials}>
         <a
