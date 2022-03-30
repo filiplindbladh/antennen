@@ -1,13 +1,12 @@
 import React from "react";
-// import "./Menu.css";
-import logo from "../../img/logo.png";
-import { NavLink } from "react-router-dom";
+import styles from "./Menu.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebook,
   faMixcloud,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Menu = () => {
   const handleTracking = (e) => {
@@ -22,23 +21,25 @@ const Menu = () => {
     });
   };
   return (
-    <nav className="Menu">
-      <ul className="Menu-navList">
-        <li className="Menu-navItem">
-          <NavLink to="/">Home</NavLink>
+    <nav className={styles.Menu}>
+      <ul className={styles.MenuNavList}>
+        <li className={styles.MenuNavItem}>
+          <Link href="/">Home</Link>
         </li>
-        <li className="Menu-navItem">
-          <NavLink to="/archive">Archive</NavLink>
+        <li className={styles.MenuNavItem}>
+          <Link href="/archive">Archive</Link>
         </li>
       </ul>
-      <NavLink to="/" aria-label="Go to Start Page">
-        <img className="Logo" src={logo} alt="logo" />
-      </NavLink>
-      <div className="Menu-socials">
+      <Link href="/" aria-label="Go to Start Page">
+        <img className={styles.Logo} src="/img/logo.png" alt="logo" />
+      </Link>
+      <div className={styles.MenuSocials}>
         <a
           href="https://www.instagram.com/malmoantenn/"
           aria-label="Go to Radio Antenn on Instagram"
           onClick={(e) => handleTracking(e)}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faInstagram} />
         </a>
@@ -46,6 +47,8 @@ const Menu = () => {
           href="https://www.facebook.com/mlmantenn/"
           aria-label="Go to Radio Antenn on Facebook"
           onClick={(e) => handleTracking(e)}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faFacebook} />
         </a>
@@ -53,6 +56,8 @@ const Menu = () => {
           href="https://www.mixcloud.com/malmoantenn/"
           aria-label="Go to Radio Antenn on Mixcloud"
           onClick={(e) => handleTracking(e)}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faMixcloud} />
         </a>

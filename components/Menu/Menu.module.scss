@@ -4,36 +4,32 @@
   justify-content: space-between;
   align-items: center;
   border: 1px solid lightgrey;
-}
-@media only screen and (max-width: 440px) {
-  .Menu {
+  @media only screen and (max-width: 440px) {
     padding: 16px;
   }
 }
 
 .Logo {
   height: 55px;
-}
-@media only screen and (max-width: 440px) {
-  .Logo {
+  @media only screen and (max-width: 440px) {
     display: none;
   }
 }
 
-.Menu-navList {
+.MenuNavList {
   display: flex;
 }
 
-.Menu-navItem {
+.MenuNavItem {
   margin-right: 12px;
   font-family: "Soyuz Grotesk", sans-serif;
 }
 
-.Menu-socials {
+.MenuSocials {
   display: flex;
 }
 
-.Menu-socials svg {
+.MenuSocials svg {
   margin-right: 12px;
   font-size: 1.4rem;
 }
