@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import { apiKey, wpBaseUri, mixlrApi } from "../apiKey";
 import axios from "axios";
 import Head from "next/head";
