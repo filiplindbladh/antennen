@@ -20,7 +20,7 @@ export const renderHeader = (description, isLive) => {
         alt="headerlogo"
       />
       <div className={styles.PageContainer}>
-        <h1 className={styles.HeadingLarge}>Radio Antenn</h1>
+        <h1 className="Heading-large">Radio Antenn</h1>
         <p className={styles.Description}>{description}</p>
         {isLive && <LivePlayer />}
       </div>

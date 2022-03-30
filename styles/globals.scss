@@ -54,26 +54,22 @@ a:hover {
   font-family: "Soyuz Grotesk", sans-serif;
   border-bottom: 5px solid black;
   display: inline-block;
-}
 
-.Heading-large.Inverted {
-  border-bottom: 5px solid white;
-}
-
-@media only screen and (max-width: 540px) {
-  .Heading-large {
+  @media only screen and (max-width: 540px) {
     font-size: 3rem;
     margin-bottom: 24px;
     border-bottom: 2.5px solid black;
   }
-}
 
-@media only screen and (max-width: 340px) {
-  .Heading-large {
+  @media only screen and (max-width: 340px) {
     font-size: 2.5rem;
     margin-bottom: 24px;
     border-bottom: 2.5px solid black;
   }
+}
+
+.Heading-large.Inverted {
+  border-bottom: 5px solid white;
 }
 
 .Heading-medium {
@@ -109,33 +105,17 @@ button:focus {
   font-weight: 800;
 }
 
-.Button {
+button {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
   border-radius: 2px;
-  padding: 8px 24px;
-}
+  padding: 0.5rem 1.5rem;
 
-.Button:hover {
-  color: white;
-  background-color: #8d3b72;
-  border: 1px solid #8d3b72;
-}
-
-.Button--white {
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  margin-top: 1.5rem;
-}
-
-.Button--white:hover {
-  background-color: white;
-  color: black;
+  &:hover {
+    background-color: rgba(#8d3b72, 0.3);
+  }
 }
 
 @keyframes rotating {
@@ -158,4 +138,12 @@ button:focus {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.Page-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-left: 2rem;
 }
