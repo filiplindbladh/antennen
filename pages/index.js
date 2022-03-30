@@ -5,8 +5,7 @@ import Head from "next/head";
 import Hero from "../components/Header/Header";
 import MixList from "../components/MixList/MixList";
 import EventsList from "../components/EventsList/EventsList";
-// import "./StartView.css";
-// import { renderHelmet } from "./StartView.helpers";
+import Link from "next/link";
 import BlogList from "../components/BlogList/BlogList";
 
 export default function Home(props) {
@@ -49,9 +48,9 @@ export default function Home(props) {
           </div>
           <MixList mixes={props.mixes.slice(0, 8)} isStartPage />
           <div className={styles.buttonContainer}>
-            {/* <NavLink to="/archive"> */}
-            <button className="Button">Archive</button>
-            {/* </NavLink> */}
+            <Link href="/archive" passHref>
+              <button className="Button">Archive</button>
+            </Link>
           </div>
         </div>
       </>

@@ -27,10 +27,10 @@ const MixList = ({ mixes, isStartPage, search = "" }) => {
   }
   return (
     <div>
-      {mixes && filter(mixes).length === 0 ? (
+      {filter(mixes)?.length === 0 ? (
         <div className={styles.MixListError}>
           <FontAwesomeIcon size="2x" icon={faExclamationTriangle} />
-          {search.length > 0 ? (
+          {search?.length > 0 ? (
             <p>No results found for &quot;{search}&quot;.</p>
           ) : (
             <p>
@@ -45,17 +45,19 @@ const MixList = ({ mixes, isStartPage, search = "" }) => {
           className={styles.MasonryGrid}
           columnClassName={styles.MixListListItem}
         >
-          {mixes &&
-            filter(mixes).map((mix) => (
-              <MixCard
-                name={mix && mix.name}
-                url={mix && mix.url}
-                created={mix && mix.created_time.slice(0, 10)}
-                picture={mix && mix.pictures}
-                tags={mix && mix.tags}
-                key={mix && mix.created_time}
-              />
-            ))}
+          {filter(mixes).map(
+            (mix) =>
+              mix && (
+                <MixCard
+                  name={mix.name}
+                  url={mix.url}
+                  created={mix.created_time.slice(0, 10)}
+                  picture={mix.pictures}
+                  tags={mix.tags}
+                  key={mix.created_time}
+                />
+              )
+          )}
         </Masonry>
       )}
     </div>

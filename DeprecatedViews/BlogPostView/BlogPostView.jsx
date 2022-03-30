@@ -68,7 +68,6 @@ export default class BlogPostView extends Component {
     }
     const title = post.map((post) => post.title.rendered);
     const excerpt = post.map((post) => stripHtml(post.excerpt.rendered));
-    console.log(title.toString());
     return (
       <div className="BlogPostView">
         <Helmet title={title}>

@@ -57,7 +57,6 @@ export default class ArchiveView extends Component {
     axios
       .get(this.state.next)
       .then((res) => {
-        console.log(res);
         const joined = this.state.mixes.concat(res.data.data);
         this.setState({ mixes: joined });
         this.setState({

@@ -34,6 +34,7 @@ p {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 a:focus {
   outline: none;
@@ -97,8 +98,8 @@ input {
 input:focus,
 button:focus {
   outline: none;
-  box-shadow: 0 0 2px 1px #8d3b72;
-  border-color: #8d3b72;
+  box-shadow: 0 0 2px 1px #58a6f3;
+  border-color: #58a6f3;
 }
 
 .Bold {
