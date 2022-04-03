@@ -8,6 +8,30 @@ import EventsList from "../components/EventsList/EventsList";
 import Link from "next/link";
 import BlogList from "../components/BlogList/BlogList";
 
+const releases = [
+  {
+    key: "filil-grain-ep",
+    url: "https://malmoantenn.bandcamp.com/album/grain-ep",
+    name: "Grain EP by Filil",
+    pictures: {
+      large: "https://f4.bcbits.com/img/a3286170265_10.jpg",
+    },
+    slug: "album/grain-ep",
+    released: "Released September 15, 2021",
+    tags: [{ name: "Breakbeat driven" }, { name: "Sample heavy" }],
+  },
+  {
+    key: "filil-grain-ep",
+    url: "https://malmoantenn.bandcamp.com/album/grain-ep",
+    name: "Grain EP by Filil",
+    pictures: {
+      large: "https://f4.bcbits.com/img/a3286170265_10.jpg",
+    },
+    slug: "album/grain-ep",
+    released: "Released September 15, 2021",
+  },
+];
+
 export default function Home(props) {
   return (
     <div className="StartView">
@@ -41,8 +65,12 @@ export default function Home(props) {
           />
         </div>
         <div className="Page-container">
-          <EventsList events={props.events} />
-          <BlogList blogposts={props.blogposts} />
+          {props.events && <EventsList events={props.events} />}
+          {props.blogposts && <BlogList blogposts={props.blogposts} />}
+          <div>
+            <h2 className="Heading-medium">Antennen Tapes</h2>
+          </div>
+          <MixList mixes={releases} isStartPage />
           <div>
             <h2 className="Heading-medium">Archive</h2>
           </div>

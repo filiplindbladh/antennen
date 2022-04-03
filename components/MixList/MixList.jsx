@@ -25,6 +25,7 @@ const MixList = ({ mixes, isStartPage, search = "" }) => {
   if (!mixes) {
     return null;
   }
+
   return (
     <div>
       {filter(mixes)?.length === 0 ? (
@@ -51,8 +52,9 @@ const MixList = ({ mixes, isStartPage, search = "" }) => {
                 <MixCard
                   name={mix.name}
                   url={mix.url}
-                  created={mix.created_time.slice(0, 10)}
+                  created={mix.created_time && mix.created_time.slice(0, 10)}
                   picture={mix.pictures}
+                  released={mix.released && mix.released}
                   tags={mix.tags}
                   key={mix.created_time}
                 />

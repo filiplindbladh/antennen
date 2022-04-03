@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import styles from "./MixCard.module.scss";
 import Image from "next/image";
 
-const MixCard = ({ url, picture, name, created, tags }) => {
+const MixCard = ({ url, picture, name, created, tags, released }) => {
   const mixCard = useRef();
   const click = () => mixCard.current.click();
   if (!picture) {
@@ -31,7 +31,9 @@ const MixCard = ({ url, picture, name, created, tags }) => {
           ></img>
         </div>
         <div className={styles.CardInfo}>
-          <span className={styles.Date}>{created.replace(/-/g, ".")}</span>
+          <span className={styles.Date}>
+            {created ? created.replace(/-/g, ".") : released}
+          </span>
           <h3 className="Heading-small">{name}</h3>
           {tags && (
             <div className={styles.TagsContainer}>
