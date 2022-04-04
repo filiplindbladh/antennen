@@ -54,11 +54,15 @@
   background-color: black;
   color: white;
   padding: 6px;
-  margin-right: 6px;
+  margin: 0 6px 6px 0;
   font-size: 1rem;
   border-radius: 4px;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .TagsContainer {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
