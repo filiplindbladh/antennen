@@ -18,7 +18,7 @@ const releases = [
     },
     slug: "album/grain-ep",
     released: "Released September 15, 2021",
-    tags: [{ name: "Breakbeat driven" }, { name: "Sample heavy" }],
+    // tags: [{ name: "Breaks" }, { name: "Sample driv" }],
   },
   {
     key: "filil-grain-ep",
