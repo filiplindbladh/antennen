@@ -1,6 +1,10 @@
 .MixListError {
   display: flex;
   align-items: center;
+
+  svg {
+    max-width: 2rem;
+  }
 }
 .MixListError p {
   margin-left: 16px;

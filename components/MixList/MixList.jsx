@@ -56,7 +56,7 @@ const MixList = ({ mixes, isStartPage, search = "" }) => {
                   picture={mix.pictures}
                   released={mix.released && mix.released}
                   tags={mix.tags}
-                  key={mix.created_time}
+                  key={mix.created_time || mix.released}
                 />
               )
           )}
