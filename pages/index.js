@@ -20,16 +20,16 @@ const releases = [
     released: "Released September 15, 2021",
     // tags: [{ name: "Breaks" }, { name: "Sample driv" }],
   },
-  {
-    key: "filil-grain-ep",
-    url: "https://malmoantenn.bandcamp.com/album/grain-ep",
-    name: "Grain EP by Filil",
-    pictures: {
-      large: "https://f4.bcbits.com/img/a3286170265_10.jpg",
-    },
-    slug: "album/grain-ep",
-    released: "Released September 15, 2021",
-  },
+  // {
+  //   key: "filil-grain-ep",
+  //   url: "https://malmoantenn.bandcamp.com/album/grain-ep",
+  //   name: "Grain EP by Filil",
+  //   pictures: {
+  //     large: "https://f4.bcbits.com/img/a3286170265_10.jpg",
+  //   },
+  //   slug: "album/grain-ep",
+  //   released: "Released September 15, 2021",
+  // },
 ];
 
 export default function Home(props) {
