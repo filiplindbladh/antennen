@@ -12,7 +12,7 @@ const releases = [
   {
     key: "mood-deep-fried-dreams",
     url: "https://antenntapes.bandcamp.com/album/deep-fried-dreams-2",
-    name: "Deep fried dreams by Mood",
+    name: "Deep Fried Dreams by Mood",
     pictures: {
       large: "https://f4.bcbits.com/img/a0833044287_10.jpg",
     },
