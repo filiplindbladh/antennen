@@ -67,7 +67,7 @@ export default function Home(props) {
           {props.events && <EventsList events={props.events} />}
           {props.blogposts && <BlogList blogposts={props.blogposts} />}
           <div>
-            <h2 className="Heading-medium">Antennen Tapes</h2>
+            <h2 className="Heading-medium">Antenn Tapes</h2>
           </div>
           <MixList mixes={releases} isStartPage />
           <div>
