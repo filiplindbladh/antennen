@@ -10,26 +10,25 @@ import BlogList from "../components/BlogList/BlogList";
 
 const releases = [
   {
+    key: "mood-deep-fried-dreams",
+    url: "https://antenntapes.bandcamp.com/album/deep-fried-dreams-2",
+    name: "Deep fried dreams by Mood",
+    pictures: {
+      large: "https://f4.bcbits.com/img/a0833044287_10.jpg",
+    },
+    slug: "album/deep-fried-dreams",
+    released: "Released April 5, 2022",
+  },
+  {
     key: "filil-grain-ep",
-    url: "https://malmoantenn.bandcamp.com/album/grain-ep",
+    url: "https://antenntapes.bandcamp.com/album/grain-ep",
     name: "Grain EP by Filil",
     pictures: {
       large: "https://f4.bcbits.com/img/a3286170265_10.jpg",
     },
     slug: "album/grain-ep",
     released: "Released September 15, 2021",
-    // tags: [{ name: "Breaks" }, { name: "Sample driv" }],
   },
-  // {
-  //   key: "filil-grain-ep",
-  //   url: "https://malmoantenn.bandcamp.com/album/grain-ep",
-  //   name: "Grain EP by Filil",
-  //   pictures: {
-  //     large: "https://f4.bcbits.com/img/a3286170265_10.jpg",
-  //   },
-  //   slug: "album/grain-ep",
-  //   released: "Released September 15, 2021",
-  // },
 ];
 
 export default function Home(props) {
