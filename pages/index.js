@@ -10,6 +10,16 @@ import BlogList from "../components/BlogList/BlogList";
 
 const releases = [
   {
+    key: "made-in-heaven",
+    url: "https://antenntapes.bandcamp.com/album/made-in-heaven",
+    name: "Made In Heaven",
+    pictures: {
+      large: "https://f4.bcbits.com/img/a0461093053_16.jpg",
+    },
+    slug: "album/made-in-heaven",
+    released: "Released January 4, 2023",
+  },
+  {
     key: "mood-deep-fried-dreams",
     url: "https://antenntapes.bandcamp.com/album/deep-fried-dreams-2",
     name: "Deep Fried Dreams by Mood",
