@@ -65,10 +65,8 @@ export default function Home(props) {
       <>
         <div>
           <Hero
-            description={props.description}
-            status={props.status}
+            description="Antennen is an online radio channel, based in Malmö, Gothenburg and Stockholm. Our main goal is to stream live music from upcoming artists in the local scenes. Listen to some old shows here on the website, or give us a shout on social media if you want to collaborate. Stay fringe!"
             isLive={props.isLive}
-            blogpost={props.blogposts[0]}
           />
         </div>
         <div className="Page-container">
@@ -97,22 +95,11 @@ export async function getServerSideProps() {
     `https://api.mixcloud.com/malmoantenn/cloudcasts/?code=${apiKey}`
   );
 
-  const wpEvents = await axios.get(
-    `${wpBaseUri}/wp-json/tribe/events/v1/events`
-  );
-
-  const wpPage = await axios.get(`${wpBaseUri}/wp-json/wp/v2/pages/2`);
-
-  const wpBlog = await axios.get(`${wpBaseUri}/wp-json/wp/v2/posts`);
-
   const mixlrLive = await axios.get(mixlrApi);
 
   return {
     props: {
       mixes: mixlrData.data.data,
-      events: wpEvents.data.events,
-      description: wpPage.data.acf.description,
-      blogposts: wpBlog.data,
       isLive: mixlrLive.data.is_live,
     },
   };
