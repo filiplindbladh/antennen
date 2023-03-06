@@ -44,7 +44,8 @@ const releases = [
 export default function Home(props) {
   return (
     <div className="StartView">
-      <Head title="Radio Antenn - A web based radio from Sweden">
+      <Head>
+        <title>Radio Antenn - A web based radio from Sweden</title>
         <meta
           property="og:title"
           content="Radio Antenn - A web based radio from Sweden"

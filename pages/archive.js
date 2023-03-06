@@ -7,6 +7,8 @@ export default function ArchivePage(props) {
   return (
     <>
       <Head title="Radio Antenn">
+        <title>Radio Antenn - Archives</title>
+
         <meta property="og:title" content="Radio Antenn Archives" />
         <meta
           name="description"
