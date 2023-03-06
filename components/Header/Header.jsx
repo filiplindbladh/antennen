@@ -1,14 +1,7 @@
 import React from "react";
-// import "./Header.css";
 import LivePlayer from "../LivePlayer/LivePlayer";
-// import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
-// import { stripHtml } from "../../Views/StartView/StartView.helpers";
-// import { useMediaQuery } from "react-responsive";
-// import Carousel from "re-carousel";
-// import IndicatorDots from "./IndicatorDots/IndicatorDots";
-// import Buttons from "./PaginationButtons/Buttons";
 import styles from "./Header.module.scss";
 
 export const renderHeader = (description, isLive) => {

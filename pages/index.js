@@ -57,11 +57,8 @@ export default function Home(props) {
           name="description"
           content="Radio Antenn is a small collective of music enthusiasts - aiming to connect music from around the globe."
         />
-        <meta
-          property="og:image"
-          content="https://malmoantenn.se/MalmoAntenn.jpg"
-        />
-        <meta property="og:url" content="https://malmoantenn.se/" />
+        <meta property="og:image" content="/img/antennen.png" />
+        <meta property="og:url" content="https://antennen.se/" />
       </Head>
 
       <>
@@ -94,7 +91,7 @@ export default function Home(props) {
     </div>
   );
 }
-export async function getStaticProps(context) {
+export async function getServerSideProps() {
   const mixlrData = await axios.get(
     `https://api.mixcloud.com/malmoantenn/cloudcasts/?code=${apiKey}`
   );
@@ -116,6 +113,6 @@ export async function getStaticProps(context) {
       description: wpPage.data.acf.description,
       blogposts: wpBlog.data,
       isLive: mixlrLive.data.is_live,
-    }, // will be passed to the page component as props
+    },
   };
 }

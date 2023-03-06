@@ -12,12 +12,13 @@ export default function ArchivePage(props) {
           name="description"
           content="Dig into our archieves and explore our shows"
         />
+        <meta property="og:image" content="/img/antennen.png" />
       </Head>
       <Archive next={props.next} mixes={props.mixes} />
     </>
   );
 }
-export async function getStaticProps(context) {
+export async function getServerSideProps() {
   const mixlrData = await axios.get(
     `https://api.mixcloud.com/malmoantenn/cloudcasts/?code=${apiKey}`
   );
