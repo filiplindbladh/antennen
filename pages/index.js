@@ -10,6 +10,26 @@ import BlogList from "../components/BlogList/BlogList";
 
 const releases = [
   {
+    key: "3-bone-meal",
+    url: "https://antenntapes.bandcamp.com/album/3-bone-meal",
+    name: "3 Bone Meal by Osteophage",
+    pictures: {
+      large: "https://f4.bcbits.com/img/a1732997552_10.jpg",
+    },
+    slug: "album/3-bone-meal",
+    released: "Released June 9, 2023",
+  },
+  {
+    key: "deep-fried-dreams-remixes",
+    url: "https://antenntapes.bandcamp.com/album/deep-fried-dreams-remixes",
+    name: "Deep Fried Dreams Remixes",
+    pictures: {
+      large: "https://f4.bcbits.com/img/a2407100985_10.jpg",
+    },
+    slug: "album/deep-fried-dreams-remixes",
+    released: "Released April 8, 2023",
+  },
+  {
     key: "made-in-heaven",
     url: "https://antenntapes.bandcamp.com/album/made-in-heaven",
     name: "Made In Heaven",
