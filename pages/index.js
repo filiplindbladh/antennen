@@ -10,6 +10,16 @@ import BlogList from "../components/BlogList/BlogList";
 
 const releases = [
   {
+    key: "life-eternal",
+    url: "https://antenntapes.bandcamp.com/album/life-eternal",
+    name: "Life Eternal by Skin Hologram",
+    pictures: {
+      large: "https://f4.bcbits.com/img/a2784039756_10.jpg",
+    },
+    slug: "album/life-eternal",
+    released: "released July 1, 2023",
+  },
+  {
     key: "3-bone-meal",
     url: "https://antenntapes.bandcamp.com/album/3-bone-meal",
     name: "3 Bone Meal by Osteophage",
